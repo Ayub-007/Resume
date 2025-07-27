@@ -10,17 +10,17 @@
   <div class="container">
     <h1>Create Your Resume</h1>
     <form id="resumeForm">
-      <label>Full Name: <input type="text" id="name" required /></label>
-      <label>Email: <input type="email" id="email" required /></label>
-      <label>Phone: <input type="tel" id="phone" pattern="[0-9]{10}" maxlength="10" required /></label>
+      <label>Full Name: <input type="text" id="name" required  placeholder="Enter your full name"/></label>
+      <label>Email: <input type="email" id="email" required placeholder="Enter your email address"/></label>
+      <label>Phone: <input type="tel" id="phone" pattern="[0-9]{10}" maxlength="10" required placeholder="Enter your 10 digitphone number"/></label>
       <label>Date of Birth: <input type="date" id="dob" required /></label>
-      <label>Address: <input type="text" id="address" /></label>
-      <label>Qualification: <textarea id="qualification" required></textarea></label>
-      <label>Experience: <textarea id="experience" required></textarea></label>
-      <label>Projects: <textarea id="projects" required></textarea></label>
-      <label>Languages: <input type="text" id="languages" required /></label>
-      <label>Achievements: <textarea id="achievements" required></textarea></label>
-      <label>Skills: <input type="text" id="skills" required /></label>
+      <label>Address: <input type="text" id="address" placeholder="Enter your address"/></label>
+      <label>Qualification: <textarea id="qualification" required placeholder="Enter your qualifications"></textarea></label>
+      <label>Experience: <textarea id="experience" required placeholder="Enter your experience"></textarea></label>
+      <label>Projects: <textarea id="projects" required placeholder="Enter your projects"></textarea></label>
+      <label>Languages: <input type="text" id="languages" required placeholder="Enter your languages eg:- English, Spanish"/></label>
+      <label>Achievements: <textarea id="achievements" required placeholder="Enter your achievements"></textarea></label>
+      <label>Skills: <input type="text" id="skills" required placeholder="Enter your skills eg:- JavaScript, Python"/></label>
       <button type="submit">Generate Resume</button>
     </form>
   </div>
