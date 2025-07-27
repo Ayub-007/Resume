@@ -10,23 +10,20 @@
   <div class="container">
     <h1>Create Your Resume</h1>
     <form id="resumeForm">
-      <label>Full Name: <input type="text" id="name" required placeholder="Enter your full name" /></label>
-      <label>Email: <input type="email" id="email" required placeholder="Enter your email" /></label>
-      <label>Phone:
-  <input type="tel" id="phone" pattern="[0-9]{10}" maxlength="10" placeholder="Enter your phone number" required />
-</label>
-
+      <label>Full Name: <input type="text" id="name" required /></label>
+      <label>Email: <input type="email" id="email" required /></label>
+      <label>Phone: <input type="tel" id="phone" pattern="[0-9]{10}" maxlength="10" required /></label>
       <label>Date of Birth: <input type="date" id="dob" required /></label>
-      <label>Address: <input type="text" id="address"  placeholder="Enter your address" /></label>
-      <label>Qualification: <textarea id="qualification" required placeholder="Enter your qualifications"></textarea></label>
-      <label>Experience: <textarea id="experience" required placeholder="List your work experience"></textarea></label>
-       <label>Projects: <textarea id="projects" placeholder="List your projects with descriptions" required></textarea></label>
-      <label>Languages: <input type="text" id="languages" placeholder="e.g., English, Spanish" required /></label>
-      <label>Achievements: <textarea id="achievements" placeholder="List your achievements" required></textarea></label>
-      <label>Skills (comma separated): <input type="text" id="skills" required placeholder="e.g., JavaScript, HTML, CSS" /></label>
+      <label>Address: <input type="text" id="address" /></label>
+      <label>Qualification: <textarea id="qualification" required></textarea></label>
+      <label>Experience: <textarea id="experience" required></textarea></label>
+      <label>Projects: <textarea id="projects" required></textarea></label>
+      <label>Languages: <input type="text" id="languages" required /></label>
+      <label>Achievements: <textarea id="achievements" required></textarea></label>
+      <label>Skills: <input type="text" id="skills" required /></label>
       <button type="submit">Generate Resume</button>
     </form>
   </div>
-  <script src="script.js"></script>
+  <script src="script1.js"></script>
 </body>
 </html>

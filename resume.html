@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume Output</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="resume-wrapper" id="cvOutput"></div>
+  <script>
+    const data = JSON.parse(localStorage.getItem('resumeData'));
+
+    if (!data) {
+      document.getElementById('cvOutput').innerHTML = "<p>No resume data found.</p>";
+    } else {
+      document.getElementById('cvOutput').innerHTML = `
+        <div class="resume-header">
+          <h1>${data.name}</h1>
+          <p>Email: ${data.email} | Phone: ${data.phone}</p>
+        </div>
+
+        <div class="resume-contact">
+          <p><strong>DOB:</strong> ${data.dob}</p>
+          <p><strong>Address:</strong> ${data.address}</p>
+        </div>
+
+        <div class="resume-section">
+          <h2>Qualification</h2>
+          <p>${data.qualification.replace(/\n/g, '<br>')}</p>
+        </div>
+
+        <div class="resume-section">
+          <h2>Experience</h2>
+          <p>${data.experience.replace(/\n/g, '<br>')}</p>
+        </div>
+
+        <div class="resume-section">
+          <h2>Projects</h2>
+          <p>${data.projects.replace(/\n/g, '<br>')}</p>
+        </div>
+
+        <div class="resume-section">
+          <h2>Languages</h2>
+          <ul>${data.languages.map(l => `<li>${l}</li>`).join('')}</ul>
+        </div>
+
+        <div class="resume-section">
+          <h2>Achievements</h2>
+          <p>${data.achievements.replace(/\n/g, '<br>')}</p>
+        </div>
+
+        <div class="resume-section">
+          <h2>Skills</h2>
+          <ul>${data.skills.map(s => `<li>${s}</li>`).join('')}</ul>
+        </div>
+      `;
+    }
+  </script>
+</body>
+</html>
