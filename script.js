@@ -20,5 +20,5 @@ document.getElementById("resumeForm").addEventListener("submit", function (e) {
     localStorage.setItem(key, data[key]);
   }
 
-  window.location.href = "resume.html";
+  window.location.href = "index.html";
 });
